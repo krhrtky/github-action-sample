@@ -1,9 +1,9 @@
-name: Node CI
+name: Pull Request
 
 on:
-  push:
+  pull_request:
     branches:
-    - master
+    - feature/*
 
 jobs:
   test:
