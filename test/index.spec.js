@@ -7,4 +7,7 @@ describe('add test', () => {
   test('1 + 2 ≠ 2', () => {
     expect(add(1, 2)).not.toBe(2);
   });
+  test('func + 2 -> string', () => {
+    expect(add(() => 1, 2)).toBe('() => 12');
+  });
 });
